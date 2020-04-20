@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Exercicio 2 Modulo 1 Rockseat JS</title>
+    </head>
+    <body>
+        <script>
+
+/*
+
+Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+
+var mastrangelo = (Gabriel === "Canuto") ? "Mastrangelo" : "";
+//Variavel tera valor Mastrangelo
+
+var mastrangelo = (Gabriel === "Mastrangelo") ? "Mastrangelo" : "";
+//Variavel não tera valor algum
+
+*/
+
+            function pares(x, y) {
+             
+                var numerosPares = [];
+                for(var i = x; i < y; i++) {
+                    if(i%2 == 0) {
+                        numerosPares.push(i);
+                    }
+                }
+                return numerosPares;
+            }
+
+            console.log(pares(32, 321));
+
+            console.log("you can learn anything, Mastrangelo Out");
+            
+        </script>
+    </body>
+</html>

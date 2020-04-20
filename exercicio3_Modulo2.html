@@ -1,0 +1,33 @@
+<!--Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um createQuadrado
+vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo createQuadrado deve
+aparecer na tela.-->
+
+<html>
+<head>
+    <title>Exercicio 3 Modulo 2</title> 
+</head>
+<body>
+
+    <script>
+
+        var getElementBody = document.querySelector('body');
+
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        lista = document.createElement('ul');
+
+        getElementBody.appendChild(lista);
+
+        for (let i = 0; i < nomes.length;  i++) {
+
+            var nomeLista = nomes[i];
+
+            var criarItemLista = document.createElement('li');
+            criarItemLista.innerHTML = nomeLista;
+
+            lista.appendChild(criarItemLista);
+        }
+
+    </script>
+</body>
+</html>

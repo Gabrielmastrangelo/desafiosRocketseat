@@ -1,0 +1,60 @@
+<!--
+    Pagina que eu criei para estudar
+    Curso da Rockseat
+-->
+
+<html>
+    <head>
+        <title>Exercicio 5 Modulo 1 Rockseat JS</title>
+    </head>
+    <body>
+        <script>
+
+/*
+INSTRUÇÕES:
+
+Dado o seguinte vetor de objetos:
+var usuarios = [
+ {
+ nome: "Diego",
+ habilidades: ["Javascript", "ReactJS", "Redux"]
+ },
+ {
+ nome: "Gabriel",
+ habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+ }
+];
+Escreva uma função que produza o seguinte resultado:
+O Diego possui as habilidades: Javascript, ReactJS, Redux
+O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+
+*/
+
+            function analiseUsuarios(usuarios) {
+                
+                var String = "";
+
+                for(var i = 0; i < usuarios.length; i++) {
+                    String += "O " + usuarios[i].nome + " possui as habilidades: " + usuarios[i].habilidades + "\n";
+                }
+
+                return String;
+            }
+
+            //Detalhe importante, isso é um array, que possui dois objetos dentro
+            var usuarios = [
+             {
+             nome: "Diego",
+             habilidades: ["Javascript", "ReactJS", "Redux"]
+             },
+             {
+             nome: "Gabriel",
+             habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+             }
+            ];
+
+             console.log(analiseUsuarios(usuarios));
+
+        </script>
+    </body>
+</html>

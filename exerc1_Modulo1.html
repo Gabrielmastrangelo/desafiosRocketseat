@@ -1,0 +1,36 @@
+<!--
+    Pagina que eu criei para estudar
+    Curso da Rockseat
+-->
+
+<html>
+    <head>
+        <title>Exercicio 1 Modulo 1 Rockseat JS</title>
+    </head>
+    <body>
+        <script>
+
+/*Criar uma função que retorna o seguinte valor
+
+    O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
+
+nº 1293
+*/
+
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
+
+            function adress(endereco) {
+                return "O usuário mora em " + endereco.cidade + " / " + endereco.uf + ", no bairro " + endereco.bairro + ", na " + endereco.rua + " com nº" + endereco.numero;
+            }
+
+            console.log(adress(endereco))
+
+        </script>
+    </body>
+</html>

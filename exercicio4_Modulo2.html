@@ -1,0 +1,49 @@
+<!--Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um createQuadrado
+vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo createQuadrado deve
+aparecer na tela.-->
+
+<html>
+<head>
+    <title>Exercicio 4 Modulo 2</title> 
+</head>
+<body>
+
+    <div>
+        <input type="text" name="nome">
+        <button onClick="adicionarNomeArray()">Adicionar</button>
+    </div>    
+
+    <script>
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        
+        var getElementDiv = document.querySelector('body div');
+        lista = document.createElement('ul');
+        getElementDiv.appendChild(lista);
+        
+        function criarItemLista(nome) {
+            var criarItemLista = document.createElement('li');
+            criarItemLista.innerHTML = nome;
+            return criarItemLista;
+        }
+
+        for (let i = 0; i < nomes.length;  i++) {
+                var nomeLista = nomes[i];
+
+                lista.appendChild(criarItemLista(nomeLista));
+        }
+
+
+        function adicionarNomeArray() {
+            var recebeInputNovoNome = document.querySelector('input');
+            var novoNome = recebeInputNovoNome.value;     
+
+            if(novoNome !== "" && nomes.includes(novoNome) === false) {
+                lista.appendChild(criarItemLista(novoNome));
+                nomes.push(novoNome);
+            }
+            recebeInputNovoNome.value = ""; 
+        }
+
+    </script>
+</body>
+</html>
